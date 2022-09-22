@@ -1,0 +1,501 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+    /* border: 1px solid blue; */
+
+}
+
+[class*=col-]{
+    float: left;
+    /* border: 1px solid red; */
+    /* padding:15px; */
+}
+ /* ********************************** for mobile phones ******************************* */
+@media only screen and (min-width:400px){
+    .col-m-1{ width: 8.33%;}
+    .col-m-2{ width: 16.66%;}
+    .col-m-3{ width: 25%;}
+    .col-m-4{ width: 33.33%;}
+    .col-m-5{ width: 41.66%;}
+    .col-m-6{ width: 50%;}
+    .col-m-7{ width: 58.33%;}
+    .col-m-8{ width: 66.66%;}
+    .col-m-9{ width: 75%;}
+    .col-m-10{ width: 83.33%;}
+    .col-m-11{ width: 91.66%;}
+    .col-m-12{ width: 100%;} 
+}
+
+/* [class*=col-]{
+    width:100%;
+} */
+/* ********************************* for tablet ************************************** */
+@media only screen and (min-width:600px ){
+    .col-t-1{ width: 8.33%;}
+    .col-t-2{ width: 16.66%;}
+    .col-t-3{ width: 25%;}
+    .col-t-4{ width: 33.33%;}
+    .col-t-5{ width: 41.66%;}
+    .col-t-6{ width: 50%;}
+    .col-t-7{ width: 58.33%;}
+    .col-t-8{ width: 66.66%;}
+    .col-t-9{ width: 75%;}
+    .col-t-10{ width: 83.33%;}
+    .col-t-11{ width: 91.66%;}
+    .col-t-12{ width: 100%;}
+}
+
+/* ************************** for desktop ******************************************************* */
+@media only screen and (min-width:768px){
+    .col-1{ width: 8.33%;}
+    .col-2{ width: 16.66%;}
+    .col-3{ width: 25%;}
+    .col-4{ width: 33.33%;}
+    .col-5{ width: 41.66%;}
+    .col-6{ width: 50%;}
+    .col-7{ width: 58.33%;}
+    .col-8{ width: 66.66%;}
+    .col-9{ width: 75%;}
+    .col-10{ width: 83.33%;}
+    .col-11{ width: 91.66%;}
+    .col-12{ width: 100%;}     
+}
+
+
+/* ********************************* Header Section *******************************************  */
+header{
+   height:75px;
+   position: fixed;
+   top:0px;
+   left:0px;
+   width:100%;
+   background-color: white;
+    
+}
+.logo{
+    height:75px;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 10px;
+}
+.nav_list{
+    background-color: #00bdfe;
+    height: 75px;
+}
+.nav_list ul{
+    list-style: none;
+    padding-top:4%;
+    font-family: 'roboto';
+    /* letter-spacing:1px; */
+    /* font-size: 15.5px; */
+}
+.nav_list a{
+    text-decoration: none;
+    color: white;
+}
+.nav_list ul li{
+    float: left;
+    color: white;
+    padding-left:10%;
+    /* border: 1px solid black; */
+}
+.nav_list ul ul{
+    display: none;
+    margin-top:21px;
+
+}
+.nav_list ul li:hover>ul{
+    display:grid;
+}
+.nav_list ul ul li{
+    width:100%;
+    height:40px;
+    padding-top:5%;
+    background-color: white;
+    color: black;
+    border-top: 1px solid rgb(164, 163, 163);
+    font-size:13.5px;
+
+}
+.sign_in{
+    height: 75px;
+    padding: 1%;
+    
+}
+.signIn{
+    border:1px solid #00bdfe;
+    color: #00bdfe;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight:bold;
+    padding:5% 10% 5% 10%;
+    border-radius: 10px;
+
+}
+.sign_in a:hover{
+    background-color: #00bdfe;
+    color: white;
+}
+
+
+
+/* ****************************** Banner Section ************************************************ */
+.bg{
+    height:900px;
+    margin-top:-25px;
+    background: linear-gradient(to left,rgba(37, 37, 37, 0.7),rgba(37, 37, 37, 0.7)),url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg h1{
+    text-align: center;
+    margin-top: 250px;
+    color: white;
+    font-family:'Roboto';
+    font-size:400%;
+}
+.bg h1 a{
+    color: #00bdfe;
+}
+.bg hr{
+    width: 60%;
+    margin-left:20%;
+    margin-top: 3%;
+}
+.bg p{
+    text-align:center;
+    color: white;
+    margin-top:30px;
+    font-family: 'Roboto';
+    line-height:2;
+}
+.explore{
+    margin-top: 5%;
+    margin-left:30%;
+    font-family: 'Roboto';
+}
+.explore_sub {
+    border: 1px solid white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2%;
+    font-size:150%;
+}
+.explore a{
+    text-decoration: none;
+    color: white;
+
+}
+.explore a:hover{
+    color: #00bdfe;
+    background-color: white;
+}
+a:hover:nth-child(2){
+    color: #00bdfe;
+    background-color: transparent;
+}
+
+/* .watch{
+   font-size:110%;
+   font-family: 'Roboto';
+}
+.watch a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+}
+.watch a:hover{
+    color: #00bdfe;
+} */
+
+
+/* ***************************** Featured Images *********************************************** */
+.feature{
+    margin-left:6%;
+    margin-top: -10%;
+}
+
+
+/* ************************** Categories Section *********************************************** */
+.categories{
+    font-family: 'Roboto';
+    padding-left:5.8%;
+    padding-top: 8%;
+    line-height: 2;
+}
+.categories p{
+    color: #00bdfe;
+}
+.categories h1 a{
+    color: #00bdfe;
+}
+.categories_button{
+    /* height:100px; */
+    /* padding-left: 2%; */
+    padding-top: 11%;
+    padding-bottom: 2%;
+}
+.categories_button a{
+ text-decoration: none;
+ color:white;
+ background-color: #00bdfe;
+ font-family: 'roboto';
+ padding: 5%;
+ border-radius: 10px;
+ /* border: #00bdfe; */
+}
+.categories_button a:hover{
+    border:1px solid #00bdfe;
+    background-color: white;
+    color: #00bdfe;
+}
+
+/* *************************** Contest Section ************************************************* */
+.contests{
+    height: auto;
+    border: 1px solid rgb(167, 166, 166);
+    margin-left:5%;
+    border-radius:20px;
+}
+.icon{
+    background-color: rgb(240, 238, 238);
+    height:70px;
+    padding:5% 1% 5% 1%;
+    border-radius: 10px;
+   margin-left:10%;
+}
+.contests h2{
+    font-family: 'roboto';
+    margin-top: 15%;
+    margin-left: 35%;
+}
+.available{
+    width: 18%;
+    box-shadow: 0px 0px 10px .5px rgb(201, 199, 199);
+    color: #00bdfe;
+    padding: 2% 3% 2% 3%;
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 35%;
+    font-family: 'Roboto';
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    display: flex;
+    justify-content: center;
+}
+.contests p{
+    font-family: 'Roboto';
+    color: rgb(163, 158, 158);
+    font-size: 110%;
+    margin-left: 15%;
+    
+}
+.popular{
+    margin-left:10%;
+    margin-top: 15%;
+    /* border-radius: 10px; */
+}
+.browse{
+   margin-top: 10%;
+   margin-bottom: 7%;
+   display: flex;
+   justify-content:center;
+
+}
+.browse_sub{
+    border:1px solid #00bdfe;
+    font-family: 'Roboto';
+    font-weight:bold;
+    text-align:center;
+    border-radius: 10px;
+    padding:7% 2% 7% 2%;
+    /* line-height:1.5; */
+    /* margin-left: 8%; */
+
+}
+.browse a{
+    text-decoration: none;
+    color: #00bdfe;
+}
+.browse a:hover{
+    background-color: #00bdfe;
+    color: white;
+}
+.browse a:hover{
+    color: white;
+}
+
+/* ***************************** Winner's Section *********************************************** */
+.winners{
+    height:auto;
+    background-color: rgb(239, 250, 255);
+    margin-top: 10%;
+}
+.winners p{
+    color: #00bdfe;
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Roboto';
+}
+.winners h1{
+    color: #00bdfe;
+    text-align: center;
+    font-family:'Roboto';
+    margin-top: 1%;
+}
+.winners h1 a{
+    color: black;
+}
+.participants{
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+}
+.p_info{
+    /* margin-left: 5%; */
+    font-family: 'roboto';
+    margin-top: 5%;
+    line-height: 2;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+.p_info h4{
+    color: rgb(150, 144, 144);
+    
+}
+.p_button{
+    /* margin-left:40%; */
+    margin-top: 2%;
+    margin-bottom: 10%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.p_sub{
+    border:1px solid #00bdfe;
+    font-family: 'Roboto';
+    font-weight:bold;
+    text-align: center;
+    border-radius: 10px;
+    padding-top:1%;
+    /* line-height:1.5; */
+    height: 50px;
+}
+.p_button a{
+    text-decoration: none;
+    color: #00bdfe;
+}
+.p_button a:hover{
+    color: white;
+    background-color: #00bdfe;
+}
+
+/* ***************************** Pricing Section ************************************************** */
+.pricing{
+    background-color: white;
+    margin-top: 10%;
+    font-family: 'Roboto';
+}
+.pricing p{
+    color: #00bdfe;
+    text-align: center;
+}
+.pricing h1{
+    text-align: center;
+    line-height: 2;
+}
+.pricing h1 a{
+    color: #00bdfe;
+}
+.plan{
+    height: auto;
+    margin-left: 5%;
+    border: 1px solid rgb(206, 203, 203);
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.pricing h3{
+    margin-top: 10%;
+    text-align: center;
+}
+.pricing h3 a{
+    text-decoration: none;
+}
+.pricing h3 a:hover{
+    color: #00bdfe;
+}
+.pricing hr{
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.plan p{
+    line-height: 2.5;
+}
+.plan h1{
+    color: #00bdfe;
+    text-align: center;
+    margin-top: 10%;
+}
+.plan_b{
+    margin-top: 10%;    
+    display: flex;
+    justify-content: center;
+}
+.plan_sub{
+    height:50px;
+    padding:2%;
+    border: 1px solid #00bdfe;
+    color: #00bdfe;
+    padding: 4% 11% 5% 11%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+.plan_b a{
+    text-decoration: none;
+    color: #00bdfe;
+}
+.plan_b a:hover{
+    color: white;
+    background-color: #00bdfe;
+}
+
+/* ***************************** Footer Section ************************************************ */
+.footer{
+    background-color: #00bdfe;
+    height: 100px;
+    margin-top: 7%;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    margin-top: 3%;
+}
+.footer p a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.footer p a:hover{
+    color: rgb(49, 21, 49);
+}
+ 
+ @media only screen and (min-width:400px){
+   /* .feature{
+    margin-top: 3%;
+   } */
+ }
